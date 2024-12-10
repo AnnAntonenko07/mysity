@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my city</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">Моє місто</span>
+        
+            <nav>
+                <ul>
+                    <li ><a href="index.html">Головна</a></li>
+                    <li><a href="place.html">Цікаві місця</a></li>
+                    <li class="active"><a href="news.html">Новини</a></li>
+                    <li class="btn"><a href="map.html">Мапа міста</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <div class="news">
+            <h3>Події в Черкасах та області</h3>
+            <ul>
+             <li><a href="https://18000.com.ua/strichka-novin/u-svyato-mixajlivskomu-sobori-v-cherkasax-vidbulosya-zanyattya-v-nedilnij-shkoli/">У Свято-Михайлівському соборі в Черкасах відбулося заняття в недільній школі</a></li>
+             <li><a href="https://18000.com.ua/strichka-novin/cherkaskij-lnz-prograv-u-drugomu-matchi-pospil">Черкаський “ЛНЗ” програв у другому матчі поспіль</a></li>
+             <li><a href="https://18000.com.ua/strichka-novin/sili-ppo-zbili-50-vorozhix-bpla/">Сили ППО збили 50 ворожих БпЛА</a></li>
+            <li> <a href="https://18000.com.ua/strichka-novin/cherkashhanin-z-odnodumcyami-xotiv-nezakonno-peretnuti-kordon-ale-ne-sxovavsya-vid-dronu-prikordonnikiv-video/">Черкащанин з однодумцями хотів незаконно перетнути кордон, але не сховався від дрону прикордонників – відео</a></li>
+             <li><a href="https://procherk.info/news/7-cherkassy/122697-u-cherkasah-vidbulasja-aktsija-na-pidtrimku-polonenih">У Черкасах відбулася акція на підтримку полонених</a></li>
+             <li><a href="https://provce.ck.ua/zavtra-svitlo-na-cherkashchyni-vymykatymut-spozhyvacham-trokh-cherh/">Завтра світло на Черкащині вимикатимуть споживачам трьох черг</a></li>
+             <li><a href="https://hromadske-uman.com/?p=5506">В Умані аграрії передали 18 автомобілів для ЗСУ</a></li>
+             <li><a href="https://vycherpno.ck.ua/11-cherkashhan-poyihaly-do-nimechchyny-dlya-uchasti-v-mizhnarodnomu-proyekti/">11 черкащан поїхали до Німеччини для участі в міжнародному проєкті
+            </a></li>
+             <li><a href="https://vycherpno.ck.ua/na-cherkashhyni-golova-kolgospu-vryatuvav-czile-selo-vid-golodomoru-video/">На Черкащині голова колгоспу врятував ціле село від Голодомору (ВІДЕО)
+            </a></li>
+       </ul>
+     </div>
+        <footer>
+            <div class="blocks container">
+                <div>
+                    <span class="logo">
+                        Моє місто
+                    </span>
+                </div>
+              <div>
+                <h4>Про нас</h4>
+                <ul>
+                    <li>
+                        Історія міста</li>
+                      <li> Цікаві місця</li> 
+                      <li>  Заклади</li>
+                       <li> Мапа міста</li>
+                    
+                </ul>
+              </div>
+              <div>
+                <h4>Наші контакти</h4>
+                <ul>
+                    <li>+380639635284</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <p>
+                © Антоненко Анна
+            </p>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="img/My photo.jpg" alt="Моє фото">
+                    <h2>Антоненко Анна</h2>
+                    <h3>17 років,м.Черкаси</h3>
+                    <p>Студентка Черкаського державного бізнес коледжу, спеціальність "Інженерія програмного забезпечення". Великий інтерес до сфери ІТ з планами побудувати кар'єру в цій галузі. Має безліч захоплень і завжди відкриває для себе щось нове. Активна, постійно прагне до саморозвитку та нових досягнень.</p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            
+            let modal = document.getElementById("myModal");
+            let text = document.querySelector("footer > p"); 
+            let span = document.getElementsByClassName("close")[0];
+           
+            text.onclick = function() {
+                modal.style.display = "flex";
+            }
+            
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+    </body>
+    </html>

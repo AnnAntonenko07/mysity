@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Черкас</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">Моє місто</span>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="place.html">Цікаві місця</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li class="active"><a href="map.html">Мапа міста</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+        <div class="container map-view-container">
+            <div class="map-modal-tabs">
+                <div id="mapTab" class="map-modal-tab active" onclick="switchView('map')">
+                    Карта міста
+                </div>
+                <div id="panoramaTab" class="map-modal-tab" onclick="switchView('panorama')">
+                    Панорама
+                </div>
+            </div>
+
+            <div class="map-view-container">
+                <div id="mapView" class="map-view">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169410.58464560724!2d32.14467676513078!3d49.42536609282866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d42d4f4cc0517f%3A0xb8c7d9f23c5f6c2b!2z0KfQtNGA0LDQstGB0YLQstGD0LnRgtC1!5e0!3m2!1suk!2sua!4v1700988777485!5m2!1suk!2sua" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div id="panoramaView" class="map-view" style="display:none;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!4v1700989200000!6m8!1m7!1sCAoSLEFGMVFpcE9qbk9sMDdaMUx1aG5nbTdNNXRZdG9zNzRmNXFwaGdOMGg5dXo3!2m2!1d49.4229!2d32.0622!3f270!4f0!5f0.7820865974627469" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">
+                    Моє місто
+                </span>
+            </div>
+            <div>
+                <h4>Про нас</h4>
+                <ul>
+                    <li>Історія міста</li>
+                    <li>Цікаві місця</li> 
+                    <li>Заклади</li>
+                    <li>Мапа міста</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Наші контакти</h4>
+                <ul>
+                    <li>+380639635284</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>© Антоненко Анна</p>
+    </footer>
+
+    <script>
+        function switchView(viewType) {
+            const mapView = document.getElementById('mapView');
+            const panoramaView = document.getElementById('panoramaView');
+            const mapTab = document.getElementById('mapTab');
+            const panoramaTab = document.getElementById('panoramaTab');
+
+            if (viewType === 'map') {
+                mapView.style.display = 'block';
+                panoramaView.style.display = 'none';
+                mapTab.classList.add('active');
+                panoramaTab.classList.remove('active');
+            } else {
+                mapView.style.display = 'none';
+                panoramaView.style.display = 'block';
+                mapTab.classList.remove('active');
+                panoramaTab.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my city</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="D:/website/img/favicon.ico">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="container">
+            <span class="logo">Моє місто</span>
+
+        
+            <nav>
+                <ul>
+                    <li class="active"><a href="/index.html">Головна</a></li>
+                    <li><a href="place.html">Цікаві місця</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li class="btn"><a href="map.html">Мапа міста</a></li>
+                </ul>
+            </nav> 
+        
+        </header>
+        <div class="hero container">
+            
+            <div class="hero--info">
+                <h2>Моє місто</h2>
+                <h1>Черкаси — затишне місто на березі Дніпра, відоме своєю багатою історією, культурою та мальовничими краєвидами.</h1>
+                <p>На цьому сайті кожен знайде щось цікаве для себе: жителі міста зможуть дізнатися нові факти про улюблені місця, а гості — відкрити для себе багатогранну культуру, захопливу історію та всі найцікавіші куточки Черкас.</p>
+                <button class="btn"><a href="history.html">Історія міста</a></button>
+            </div>
+        
+            <ul class="slider">
+                <li class="item item1" style="background-image: url('https://novadoba.com.ua/wp-content/uploads/2024/08/Bez-imeni-2.png')"></li>
+                <li class="item item2" style="background-image: url('https://blog.pokupon.ua/wp-content/uploads/2021/05/cherkassy.jpg')"></li>
+                <li class="item item3" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Пагорб_слави_вид.JPG')"></li>
+                <li class="item item4" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/ParkUvileiny1.jpg/1200px-ParkUvileiny1.jpg')"></li>
+              </ul>
+            </div>
+       
+        <div class="container trending">
+            <a href="more.html" class="see-all">Дивитись більше</a>
+
+            <h3>Відомі люди міста Черкаси</h3>
+            
+            <div class="people">
+                <div class="block">
+                    <img src="img/Хливнюк.png" alt="">
+                    <span>
+                        <img src="icon/mic.png" alt="">Василь Симоненко</span>
+                </div>
+                <div class="block">
+                    <img src="img/Альона.png" alt="">
+                    <span>
+                        <img src="icon/mic.png" alt="">Олена Омаргалієва</span>
+                </div>
+                <div class="block">
+                    <img src="https://cdn.wonderzine.me/wonderzine.com.ua/post-image_featured/20hGqgJyNDbrFAH5hX82tw-default.png" alt="">
+                    <span>
+                        <img src="icon/radio.png" alt="">Дар'я Коломієць</span>
+                </div>
+                <div class="block">
+                    <img src="img/Довбик.png" alt="">
+                    <span>
+                        <img src="icon/ball.png" alt="">Артем Довбик</span>                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="container">
+            <h3>Проєкт "Моє місто"</h3>
+        <p>"Моє місто" — це захоплюючий онлайн-портал, присвячений Черкасам, де ви зможете зануритися в багату історію міста, відкрити для себе унікальні та цікаві місця, дізнатися про найкращі заклади та познайомитися з видатними особистостями, які прославили Черкаси.</p>
+        </div>
+    </div>
+    <div class="container email">
+        <h3>Моє місто</h3>
+        <div class="block1">
+            <div>
+                <h4>Будьте в курсі</h4>
+                <p>Підпишіться на щомісячну розсилку,щоб бути в курсі всіх новин міста</p>
+            </div>
+        <div>
+            <input type="email" id="emailField" placeholder="Введіть свою пошту">
+            <button onclick="checkEmail()">Підписатися</button>
+        </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">
+                    Моє місто
+                </span>
+            </div>
+          <div>
+            <h4>Про нас</h4>
+            <ul>
+                <li>
+                    Історія міста</li>
+                  <li> Цікаві місця</li> 
+                  <li>  Заклади</li>
+                   <li> Мапа міста</li>
+                
+            </ul>
+          </div>
+          <div>
+            <h4>Наші контакти</h4>
+            <ul>
+                <li>+380639635284</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p>
+            © Антоненко Анна
+        </p>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="img/My photo.jpg" alt="Моє фото">
+                <h2>Антоненко Анна</h2>
+                <h3>17 років,м.Черкаси</h3>
+                <p>Студентка Черкаського державного бізнес коледжу, спеціальність "Інженерія програмного забезпечення". Великий інтерес до сфери ІТ з планами побудувати кар'єру в цій галузі. Має безліч захоплень і завжди відкриває для себе щось нове. Активна, постійно прагне до саморозвитку та нових досягнень.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        
+        let modal = document.getElementById("myModal");
+        let text = document.querySelector("footer > p"); 
+        let span = document.getElementsByClassName("close")[0];
+       
+        text.onclick = function() {
+            modal.style.display = "flex";
+        }
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+</html>
+
